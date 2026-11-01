@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import React, { useRef, useState, useEffect, useCallback } from 'react';
-import { Play, Film, AlertCircle, Volume2, VolumeX, FastForward, RotateCcw, ArrowRight, Eye, Compass } from 'lucide-react';
+import { Play, AlertCircle, Volume2, VolumeX, RotateCcw } from 'lucide-react';
 import { QuestionScreen, AnswerRegistration } from '@/components/consultation/QuestionScreen';
 import { PostP15Flow } from '@/components/consultation/PostConsultationFlow';
 import {
