@@ -492,7 +492,26 @@ export function IntroExperience() {
         <div className="fixed inset-0 z-50 bg-[#16110D] flex items-center justify-center overflow-hidden select-none">
           {!isCrossfading && <div className="absolute top-4 left-4 z-40"><button type="button" onClick={handleResetExperience} className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#181614]/80 text-[#E0D5C7]/90 text-xs border border-[#3E3833]/70" title="Volver al inicio"><RotateCcw className="w-3.5 h-3.5" /><span>Volver al inicio</span></button></div>}
           <div className={`absolute inset-0 z-10 flex items-center justify-center transition-all duration-[1800ms] ease-out ${isCrossfading ? 'opacity-0 blur-[3px] scale-[1.01]' : 'opacity-100 blur-0 scale-100'}`}>
-            {videoError ? <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center text-[#EDE7DF] gap-4"><AlertCircle className="w-8 h-8 text-[#E57373]" /><p className="text-sm max-w-md">{videoError}</p><div className="flex items-center gap-3"><button type="button" onClick={handleStartVideo} className="px-4 py-2 text-xs rounded-lg bg-[#3D352E]">Reintentar vídeo</button><button type="button" onClick={() => setStage('p01')} className="px-4 py-2 text-xs rounded-lg bg-[#2C2926]">Continuar</button></div></div> : <video ref={videoRef} playsInline autoPlay controls={false} preload="auto" onTimeUpdate={handleTimeUpdate} onVolumeChange={(e) => setIsMuted(e.currentTarget.muted || e.currentTarget.volume === 0)} onError={() => setVideoError('Error reproduciendo el archivo de vídeo en el navegador.')} onEnded={handleVideoEnded} className="w-full h-full object-contain"><source src="/assets/videos/PRESENTACIONWEB.mp4" type="video/mp4" /><source src="/PRESENTACIONWEB.mp4" type="video/mp4" /><source src="/assets/videos/PRESENTACIONWEB-1.mp4" type="video/mp4" /></video>}
+            {videoError ? <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center text-[#EDE7DF] gap-4"><AlertCircle className="w-8 h-8 text-[#E57373]" /><p className="text-sm max-w-md">{videoError}</p><div className="flex items-center gap-3"><button type="button" onClick={handleStartVideo} className="px-4 py-2 text-xs rounded-lg bg-[#3D352E]">Reintentar vídeo</button><button type="button" onClick={() => setStage('p01')} className="px-4 py-2 text-xs rounded-lg bg-[#2C2926]">Continuar</button></div></div> : (
+              <div className="w-full h-full flex items-center justify-center overflow-hidden">
+                <video
+                  ref={videoRef}
+                  playsInline
+                  autoPlay
+                  controls={false}
+                  preload="auto"
+                  onTimeUpdate={handleTimeUpdate}
+                  onVolumeChange={(e) => setIsMuted(e.currentTarget.muted || e.currentTarget.volume === 0)}
+                  onError={() => setVideoError('Error reproduciendo el archivo de vídeo en el navegador.')}
+                  onEnded={handleVideoEnded}
+                  className="w-full h-full portrait:max-sm:object-cover portrait:max-sm:object-[53%_center] portrait:sm:object-cover portrait:sm:object-[53%_center] landscape:object-contain landscape:object-center"
+                >
+                  <source src="/assets/videos/PRESENTACIONWEB.mp4" type="video/mp4" />
+                  <source src="/PRESENTACIONWEB.mp4" type="video/mp4" />
+                  <source src="/assets/videos/PRESENTACIONWEB-1.mp4" type="video/mp4" />
+                </video>
+              </div>
+            )}
           </div>
           {!isCrossfading && !videoError && <><div className="absolute top-16 left-4 z-30">{isMuted && <button type="button" onClick={unmuteAudio} className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-[#E57373] text-white text-xs"><VolumeX className="w-4 h-4" /><span>Vídeo silenciado · Pulsa para activar sonido</span></button>}</div><div className="absolute top-16 right-4 z-30"><button type="button" onClick={toggleMute} aria-label={isMuted ? 'Activar sonido' : 'Silenciar sonido'} className="p-2.5 rounded-full bg-[#181614]/85 text-[#EDE7DF] border border-[#3E3833]/70">{isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}</button></div></>}
         </div>
