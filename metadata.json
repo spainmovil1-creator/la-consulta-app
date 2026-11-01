@@ -1,0 +1,8 @@
+{
+  "name": "La Consulta · Elena Vargas",
+  "description": "Experiencia editorial interactiva y universo de obras de Elena Vargas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
