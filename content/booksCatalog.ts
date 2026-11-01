@@ -1,3 +1,4 @@
+import { publicAssetPath } from '@/lib/utils';
 import type { WorkCode } from '@/engine/selectionEngine';
 import type { AlignedWord } from '@/components/consultation/elPesoAudioWords';
 import { EL_PESO_ALIGNED_WORDS } from '@/components/consultation/elPesoAudioWords';
@@ -52,7 +53,7 @@ export const BOOKS_CATALOG: Record<WorkCode, BookPageData> = {
     volumeLabel: 'La Consulta · Volumen II',
     title: 'El peso\nque no se ve',
     subtitle: 'Cómo reconocer, nombrar y liberarte del Síndrome de la Carga Total',
-    mockupPath: '/images/mockupelpesoquenoseve.png',
+    mockupPath: publicAssetPath('/images/mockupelpesoquenoseve.png'),
     mockupAlt: 'Mockup de El peso que no se ve, de Elena Vargas',
     leadPhrase: 'Hay cosas que haces todos los días y que casi nadie ve.',
     presentationParagraphs: [
@@ -65,7 +66,7 @@ export const BOOKS_CATALOG: Record<WorkCode, BookPageData> = {
     excerptTitle: 'Anatomía\nde la sobrecarga',
     excerptIntro:
       'Hay tareas que parecen pequeñas cuando se miran por separado. El trabajo cambia cuando alguien tiene que recordarlas todas, anticiparse a ellas y procurar que ninguna quede atrás.',
-    audioPath: '/audio/audioelpeso.mp3',
+    audioPath: publicAssetPath('/audio/audioelpeso.mp3'),
     alignedWords: EL_PESO_ALIGNED_WORDS,
     closingQuestion: '¿Te reconoces\nen estas líneas?',
     closingText:
@@ -87,7 +88,7 @@ export const BOOKS_CATALOG: Record<WorkCode, BookPageData> = {
     volumeLabel: 'La Consulta · Volumen I',
     title: 'El día que\ndejé de ser',
     subtitle: 'El desvanecimiento y la reconstrucción de la propia identidad',
-    mockupPath: '/images/mockupeldia.png',
+    mockupPath: publicAssetPath('/images/mockupeldia.png'),
     mockupAlt: 'Mockup de El día que dejé de ser, de Elena Vargas',
     leadPhrase: '«Hay un momento en el que dejas de ser lo que siempre has sido. Y necesitas descubrir quién eres ahora.»',
     presentationParagraphs: [
@@ -105,7 +106,7 @@ export const BOOKS_CATALOG: Record<WorkCode, BookPageData> = {
       'La crisis es descubrir que habías construido tu valor sobre él.',
       'Y eso, aunque duele, es también la información más importante que podías recibir para empezar a construir algo más sólido.',
     ],
-    audioPath: '/audio/audioeldia.mp3',
+    audioPath: publicAssetPath('/audio/audioeldia.mp3'),
     alignedWords: EL_DIA_ALIGNED_WORDS,
     closingQuestion: '¿Te reconoces\nen estas líneas?',
     closingText:
@@ -124,7 +125,7 @@ export const BOOKS_CATALOG: Record<WorkCode, BookPageData> = {
     volumeLabel: 'La Consulta · Volumen III',
     title: 'El espejo\nque miente',
     subtitle: 'El miedo a dejar de importar y la mirada con la que aprendiste a medir tu valor.',
-    mockupPath: '/images/mockupelespejo.png',
+    mockupPath: publicAssetPath('/images/mockupelespejo.png'),
     mockupAlt: 'Mockup de El espejo que miente, de Elena Vargas',
     leadPhrase: '«A veces no ha cambiado tanto lo que eres como la forma en la que el mundo te devuelve tu propia imagen.»',
     presentationParagraphs: [
@@ -142,7 +143,7 @@ export const BOOKS_CATALOG: Record<WorkCode, BookPageData> = {
       'En palabras más sencillas: el miedo a que, poco a poco, vayas pasando de ser vista a ser ignorada.',
       'El problema no eres tú. El problema es el espejo que te están poniendo delante, porque ese espejo miente.',
     ],
-    audioPath: '/audio/audioelespejo.mp3',
+    audioPath: publicAssetPath('/audio/audioelespejo.mp3'),
     alignedWords: EL_ESPEJO_ALIGNED_WORDS,
     closingQuestion: '¿Te reconoces\nen estas líneas?',
     closingText:
@@ -161,7 +162,7 @@ export const BOOKS_CATALOG: Record<WorkCode, BookPageData> = {
     volumeLabel: 'La Consulta · Volumen IV',
     title: 'Cuando el mañana\nte secuestra',
     subtitle: 'Cómo dejar de vivir anticipando lo que aún no ha ocurrido.',
-    mockupPath: '/images/mockupcuando.png',
+    mockupPath: publicAssetPath('/images/mockupcuando.png'),
     mockupAlt: 'Mockup de Cuando el mañana te secuestra, de Elena Vargas',
     leadPhrase: '«Tu cuerpo está en esa mesa. Pero tu mente está en otro sitio.»',
     presentationParagraphs: [
@@ -181,7 +182,7 @@ export const BOOKS_CATALOG: Record<WorkCode, BookPageData> = {
       'La ansiedad anticipatoria te lleva a predecir: a intentar saber de antemano qué va a pasar, para poder controlarlo. La preparación efectiva hace algo diferente: acepta que no sabes qué va a pasar, e identifica qué puedes hacer ahora para estar en mejor posición, independientemente de lo que ocurra.',
       'La predicción consume energía sin producir seguridad real. La preparación produce seguridad real sin necesitar certeza. Son estrategias completamente diferentes, aunque a veces se confunden.',
     ],
-    audioPath: '/audio/audioelmañana.mp3',
+    audioPath: publicAssetPath('/audio/audioelmañana.mp3'),
     alignedWords: CUANDO_EL_MANANA_ALIGNED_WORDS,
     closingQuestion: '¿Te reconoces\nen estas líneas?',
     closingText:
@@ -200,7 +201,7 @@ export const BOOKS_CATALOG: Record<WorkCode, BookPageData> = {
     volumeLabel: 'La Consulta · Volumen III',
     title: 'El eco del\nsilencio',
     subtitle: 'Cómo salir de relaciones que te dejan vacía aunque no estés sola.',
-    mockupPath: '/images/mockupeleco.png',
+    mockupPath: publicAssetPath('/images/mockupeleco.png'),
     mockupAlt: 'Mockup de El eco del silencio, de Elena Vargas',
     leadPhrase: '«El silencio dentro de una relación no es solo la ausencia de palabras. Es la presencia de algo que necesita ser dicho y que todavía no ha encontrado el momento.»',
     presentationParagraphs: [
@@ -220,7 +221,7 @@ export const BOOKS_CATALOG: Record<WorkCode, BookPageData> = {
       'Que el amor no había desaparecido, sino que se había sepultado bajo el peso del silencio y del resentimiento acumulado.',
       'Y que, con trabajo y voluntad de ambas partes, era posible volver a encontrarse.',
     ],
-    audioPath: '/audio/audioeleco.mp3',
+    audioPath: publicAssetPath('/audio/audioeleco.mp3'),
     alignedWords: EL_ECO_DEL_SILENCIO_ALIGNED_WORDS,
     closingQuestion: '¿Te reconoces\nen estas líneas?',
     closingText:
@@ -239,7 +240,7 @@ export const BOOKS_CATALOG: Record<WorkCode, BookPageData> = {
     volumeLabel: 'La Consulta · Volumen VI',
     title: 'La única\ncerteza',
     subtitle: 'Vivir con el miedo a la enfermedad, a la muerte y a perder a quienes amamos.',
-    mockupPath: '/images/mockuplaunica.png',
+    mockupPath: publicAssetPath('/images/mockuplaunica.png'),
     mockupAlt: 'Mockup de La única certeza, de Elena Vargas',
     leadPhrase: '«La sombra del mañana siempre estará ahí. Pero la luz también está aquí, ahora.»',
     presentationParagraphs: [
@@ -258,7 +259,7 @@ export const BOOKS_CATALOG: Record<WorkCode, BookPageData> = {
       'El miedo a la muerte vive en el futuro. El presente es el único lugar donde la muerte no está todavía. Y paradójicamente, es también el lugar donde la vida está completamente.',
       'El mindfulness no resuelve el miedo. Pero sí lo devuelve a su lugar: algo que existe en la mente, no algo que está ocurriendo ahora.',
     ],
-    audioPath: '/audio/audiolaunica.mp3',
+    audioPath: publicAssetPath('/audio/audiolaunica.mp3'),
     alignedWords: LA_UNICA_CERTEZA_ALIGNED_WORDS,
     closingQuestion: '¿Te reconoces\nen estas líneas?',
     closingText:
