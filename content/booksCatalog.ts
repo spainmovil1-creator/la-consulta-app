@@ -53,7 +53,7 @@ export const BOOKS_CATALOG: Record<WorkCode, BookPageData> = {
     volumeLabel: 'La Consulta · Volumen II',
     title: 'El peso\nque no se ve',
     subtitle: 'Cómo reconocer, nombrar y liberarte del Síndrome de la Carga Total',
-    mockupPath: publicAssetPath('/images/mockupelpesoquenoseve.png'),
+    mockupPath: publicAssetPath('/images/MOCKUPelpesoquenoseve.PNG'),
     mockupAlt: 'Mockup de El peso que no se ve, de Elena Vargas',
     leadPhrase: 'Hay cosas que haces todos los días y que casi nadie ve.',
     presentationParagraphs: [
@@ -88,7 +88,7 @@ export const BOOKS_CATALOG: Record<WorkCode, BookPageData> = {
     volumeLabel: 'La Consulta · Volumen I',
     title: 'El día que\ndejé de ser',
     subtitle: 'El desvanecimiento y la reconstrucción de la propia identidad',
-    mockupPath: publicAssetPath('/images/mockupeldia.png'),
+    mockupPath: publicAssetPath('/images/MOCKUPeldiaquedejedeser.png'),
     mockupAlt: 'Mockup de El día que dejé de ser, de Elena Vargas',
     leadPhrase: '«Hay un momento en el que dejas de ser lo que siempre has sido. Y necesitas descubrir quién eres ahora.»',
     presentationParagraphs: [
@@ -125,7 +125,7 @@ export const BOOKS_CATALOG: Record<WorkCode, BookPageData> = {
     volumeLabel: 'La Consulta · Volumen III',
     title: 'El espejo\nque miente',
     subtitle: 'El miedo a dejar de importar y la mirada con la que aprendiste a medir tu valor.',
-    mockupPath: publicAssetPath('/images/mockupelespejo.png'),
+    mockupPath: publicAssetPath('/images/MOCKUPelespejoquemiente.png'),
     mockupAlt: 'Mockup de El espejo que miente, de Elena Vargas',
     leadPhrase: '«A veces no ha cambiado tanto lo que eres como la forma en la que el mundo te devuelve tu propia imagen.»',
     presentationParagraphs: [
@@ -162,7 +162,7 @@ export const BOOKS_CATALOG: Record<WorkCode, BookPageData> = {
     volumeLabel: 'La Consulta · Volumen IV',
     title: 'Cuando el mañana\nte secuestra',
     subtitle: 'Cómo dejar de vivir anticipando lo que aún no ha ocurrido.',
-    mockupPath: publicAssetPath('/images/mockupcuando.png'),
+    mockupPath: publicAssetPath('/images/MOCKUPcuandoelmañanatesecuestra.png'),
     mockupAlt: 'Mockup de Cuando el mañana te secuestra, de Elena Vargas',
     leadPhrase: '«Tu cuerpo está en esa mesa. Pero tu mente está en otro sitio.»',
     presentationParagraphs: [
@@ -201,7 +201,7 @@ export const BOOKS_CATALOG: Record<WorkCode, BookPageData> = {
     volumeLabel: 'La Consulta · Volumen III',
     title: 'El eco del\nsilencio',
     subtitle: 'Cómo salir de relaciones que te dejan vacía aunque no estés sola.',
-    mockupPath: publicAssetPath('/images/mockupeleco.png'),
+    mockupPath: publicAssetPath('/images/MOCKUPelecodelsilencio.png'),
     mockupAlt: 'Mockup de El eco del silencio, de Elena Vargas',
     leadPhrase: '«El silencio dentro de una relación no es solo la ausencia de palabras. Es la presencia de algo que necesita ser dicho y que todavía no ha encontrado el momento.»',
     presentationParagraphs: [
@@ -240,7 +240,7 @@ export const BOOKS_CATALOG: Record<WorkCode, BookPageData> = {
     volumeLabel: 'La Consulta · Volumen VI',
     title: 'La única\ncerteza',
     subtitle: 'Vivir con el miedo a la enfermedad, a la muerte y a perder a quienes amamos.',
-    mockupPath: publicAssetPath('/images/mockuplaunica.png'),
+    mockupPath: publicAssetPath('/images/MOCKUPlaultimacerteza.png'),
     mockupAlt: 'Mockup de La única certeza, de Elena Vargas',
     leadPhrase: '«La sombra del mañana siempre estará ahí. Pero la luz también está aquí, ahora.»',
     presentationParagraphs: [
