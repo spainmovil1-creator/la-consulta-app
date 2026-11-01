@@ -161,7 +161,6 @@ export function QuestionScreen({
           {questionImageLoaded && <div className="absolute inset-0 w-full h-full pointer-events-auto">
             {(Object.keys(hitAreas) as OptionKey[]).map((key) => {
               const area: HitAreaRect = hitAreas[key];
-              const isSelected = selectedKey === key;
 
               return (
                 <button
@@ -177,10 +176,6 @@ export function QuestionScreen({
                     height: area.height,
                   }}
                   className="absolute rounded-xl cursor-pointer border-0 bg-transparent outline-none focus:outline-none hover:bg-transparent active:bg-transparent"
-                    isSelected
-                      ? 'bg-white/[0.08]'
-                      : 'hover:bg-white/[0.025] active:bg-white/[0.05]'
-                  }`}
                 >
                   <span className="sr-only">
                     {area.label} — Opción {key}
