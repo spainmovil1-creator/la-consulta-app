@@ -37,6 +37,7 @@ export function QuestionScreen({
   const [selectedKey, setSelectedKey] = useState<OptionKey | null>(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [autoDetected, setAutoDetected] = useState<DeviceType>('desktop');
+  const [questionImageLoaded, setQuestionImageLoaded] = useState(false);
 
   // Reset de estado defensivo si questionId cambia en la misma instancia (patrón recomendado de React)
   const [prevQuestionId, setPrevQuestionId] = useState(questionId);
@@ -156,10 +157,11 @@ export function QuestionScreen({
             alt={`Pregunta ${config.number} de La Consulta (${currentDeviceConfig.id})`}
             className="w-full h-full object-contain select-none pointer-events-none drop-shadow-2xl"
             draggable={false}
+            onLoad={() => setQuestionImageLoaded(true)}
           />
 
           {/* HIT AREAS EXACTAS DEL FORMATO ACTIVO (BOTONES ACCESIBLES E INVISIBLES SOBRE CADA TARJETA) */}
-          <div className="absolute inset-0 w-full h-full pointer-events-auto">
+          {questionImageLoaded && <div className="absolute inset-0 w-full h-full pointer-events-auto">
             {(Object.keys(hitAreas) as OptionKey[]).map((key) => {
               const area: HitAreaRect = hitAreas[key];
               const isSelected = selectedKey === key;
@@ -177,10 +179,10 @@ export function QuestionScreen({
                     width: area.width,
                     height: area.height,
                   }}
-                  className={`absolute rounded-xl transition-all duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EDE7DF] ${
+                  className={`absolute rounded-xl transition-colors duration-150 cursor-pointer border-0 outline-none focus:outline-none ${
                     isSelected
-                      ? 'bg-white/20 ring-2 ring-white/80 scale-[0.99]'
-                      : 'hover:bg-white/[0.07] hover:ring-1 hover:ring-[#EDE7DF]/35 active:scale-[0.98]'
+                      ? 'bg-white/[0.08]'
+                      : 'hover:bg-white/[0.025] active:bg-white/[0.05]'
                   }`}
                 >
                   <span className="sr-only">
