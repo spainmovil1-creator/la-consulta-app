@@ -34,16 +34,15 @@ export function QuestionScreen({
   onAnswerSelected,
   hideDefaultNav = false,
 }: QuestionScreenProps) {
-  const [selectedKey, setSelectedKey] = useState<OptionKey | null>(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [autoDetected, setAutoDetected] = useState<DeviceType>('desktop');
+  const [questionImageLoaded, setQuestionImageLoaded] = useState(false);
 
   // Reset de estado defensivo si questionId cambia en la misma instancia (patrón recomendado de React)
   const [prevQuestionId, setPrevQuestionId] = useState(questionId);
   if (prevQuestionId !== questionId) {
     setPrevQuestionId(questionId);
     setIsTransitioning(false);
-    setSelectedKey(null);
   }
 
   // Detección responsive en vivo para modo 'auto'
@@ -90,10 +89,9 @@ export function QuestionScreen({
       return;
     }
 
-    setSelectedKey(key);
     setIsTransitioning(true);
 
-    // Feedback visual sutil (200ms) → transición inmediata
+    // Transición automática inmediata, sin resaltado de la zona pulsada
     setTimeout(() => {
       onAnswerSelected({
         questionId,
@@ -156,13 +154,13 @@ export function QuestionScreen({
             alt={`Pregunta ${config.number} de La Consulta (${currentDeviceConfig.id})`}
             className="w-full h-full object-contain select-none pointer-events-none drop-shadow-2xl"
             draggable={false}
+            onLoad={() => setQuestionImageLoaded(true)}
           />
 
           {/* HIT AREAS EXACTAS DEL FORMATO ACTIVO (BOTONES ACCESIBLES E INVISIBLES SOBRE CADA TARJETA) */}
-          <div className="absolute inset-0 w-full h-full pointer-events-auto">
+          {questionImageLoaded && <div className="absolute inset-0 w-full h-full pointer-events-auto">
             {(Object.keys(hitAreas) as OptionKey[]).map((key) => {
               const area: HitAreaRect = hitAreas[key];
-              const isSelected = selectedKey === key;
 
               return (
                 <button
@@ -177,11 +175,7 @@ export function QuestionScreen({
                     width: area.width,
                     height: area.height,
                   }}
-                  className={`absolute rounded-xl transition-all duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EDE7DF] ${
-                    isSelected
-                      ? 'bg-white/20 ring-2 ring-white/80 scale-[0.99]'
-                      : 'hover:bg-white/[0.07] hover:ring-1 hover:ring-[#EDE7DF]/35 active:scale-[0.98]'
-                  }`}
+                  className="absolute rounded-xl cursor-pointer border-0 bg-transparent outline-none focus:outline-none hover:bg-transparent active:bg-transparent"
                 >
                   <span className="sr-only">
                     {area.label} — Opción {key}
@@ -189,7 +183,7 @@ export function QuestionScreen({
                 </button>
               );
             })}
-          </div>
+          </div>}
         </div>
       </div>
     </div>

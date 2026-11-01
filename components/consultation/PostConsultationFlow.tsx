@@ -1,5 +1,7 @@
 'use client';
 
+import { publicAssetPath } from '@/lib/utils';
+
 import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Volume2, VolumeX, RotateCcw, ArrowLeft } from 'lucide-react';
@@ -14,7 +16,7 @@ import {
 
 export type { ExitChoice };
 
-const LETTER_MUSIC_PATH = '/audio/mixkit-wedding-01-657.mp3';
+const LETTER_MUSIC_PATH = publicAssetPath('/audio/mixkit-wedding-01-657.mp3');
 const TARGET_MUSIC_VOLUME = 0.22;
 
 export interface PostP15FlowProps {
@@ -701,7 +703,7 @@ export function PostP15Flow({
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/images/elena1_ambient.jpg"
+              src={publicAssetPath("/assets/images/elena1_ambient.jpg")}
               alt=""
               className="w-full h-full object-cover object-[64%_center]"
             />
@@ -731,8 +733,8 @@ export function PostP15Flow({
             onEnded={handleVideoEnded}
             className="relative z-10 w-full h-full select-none portrait:h-[91%] portrait:w-full portrait:object-cover portrait:object-[64%_center] portrait:translate-y-[2%] landscape:w-full landscape:h-full landscape:object-contain landscape:object-center max-w-[1920px] max-h-[1080px]"
           >
-            <source src="/assets/videos/ELENASILLON_processed%20(1).mp4" type="video/mp4" />
-            <source src="/assets/videos/ELENASILLON_processed (1).mp4" type="video/mp4" />
+            <source src={publicAssetPath("/assets/videos/ELENASILLON_processed%20(1).mp4")} type="video/mp4" />
+            <source src={publicAssetPath("/assets/videos/ELENASILLON_processed (1).mp4")} type="video/mp4" />
           </video>
 
           {/* Indicador discreto si el navegador bloqueó la reproducción automática */}
@@ -1034,7 +1036,7 @@ export function PostP15Flow({
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/images/elena2_ambient.jpg"
+              src={publicAssetPath("/assets/images/elena2_ambient.jpg")}
               alt=""
               className="w-full h-full object-cover object-[56.5%_center]"
             />
@@ -1067,8 +1069,8 @@ export function PostP15Flow({
             }}
             className="relative z-10 w-full h-full select-none portrait:h-[91%] portrait:w-full portrait:object-cover portrait:object-[56.5%_15%] portrait:translate-y-[1.5%] landscape:w-full landscape:h-full landscape:object-contain landscape:object-center max-w-[1920px] max-h-[1080px]"
           >
-            <source src="/assets/videos/elenasillon2.mp4" type="video/mp4" />
-            <source src="/elenasillon2.mp4" type="video/mp4" />
+            <source src={publicAssetPath("/assets/videos/elenasillon2.mp4")} type="video/mp4" />
+            <source src={publicAssetPath("/elenasillon2.mp4")} type="video/mp4" />
           </video>
 
           {/* Indicador discreto si el navegador bloqueó la reproducción automática del vídeo 2 */}

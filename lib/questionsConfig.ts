@@ -1,3 +1,4 @@
+import { publicAssetPath } from '@/lib/utils';
 /**
  * Arquitectura definitiva de assets y hit areas por dispositivo para las preguntas (P01–P15).
  * 
@@ -46,7 +47,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     total: 15,
     desktop: {
       id: 'desktop',
-      src: '/images/P01.png',
+      src: publicAssetPath('/images/P01.png'),
       aspectRatio: '16/9',
       aspectRatioClass: 'aspect-[16/9]',
       maxWidthClass: 'max-w-[1920px]',
@@ -93,7 +94,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     tablet: {
       id: 'tablet',
-      src: '/images/p01tablet.png',
+      src: publicAssetPath('/images/p01tablet.png'),
       aspectRatio: '3/4',
       aspectRatioClass: 'aspect-[3/4]',
       maxWidthClass: 'max-w-[1086px]',
@@ -140,7 +141,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     mobile: {
       id: 'mobile',
-      src: '/images/p01movil.png',
+      src: publicAssetPath('/images/p01movil.png'),
       aspectRatio: '9/16',
       aspectRatioClass: 'aspect-[9/16]',
       maxWidthClass: 'max-w-[941px]',
@@ -192,7 +193,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     total: 15,
     desktop: {
       id: 'desktop',
-      src: '/images/P02.png',
+      src: publicAssetPath('/images/P02.png'),
       aspectRatio: '16/9',
       aspectRatioClass: 'aspect-[16/9]',
       maxWidthClass: 'max-w-[1920px]',
@@ -239,7 +240,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     tablet: {
       id: 'tablet',
-      src: '/images/p02tablet.png',
+      src: publicAssetPath('/images/p02tablet.png'),
       aspectRatio: '3/4',
       aspectRatioClass: 'aspect-[3/4]',
       maxWidthClass: 'max-w-[1086px]',
@@ -286,7 +287,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     mobile: {
       id: 'mobile',
-      src: '/images/p02movil.png',
+      src: publicAssetPath('/images/p02movil.png'),
       aspectRatio: '9/16',
       aspectRatioClass: 'aspect-[9/16]',
       maxWidthClass: 'max-w-[941px]',
@@ -338,7 +339,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     total: 15,
     desktop: {
       id: 'desktop',
-      src: '/images/P03.png',
+      src: publicAssetPath('/images/P03.png'),
       aspectRatio: '16/9',
       aspectRatioClass: 'aspect-[16/9]',
       maxWidthClass: 'max-w-[1920px]',
@@ -385,7 +386,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     tablet: {
       id: 'tablet',
-      src: '/images/P03tablet.png',
+      src: publicAssetPath('/images/P03tablet.png'),
       aspectRatio: '3/4',
       aspectRatioClass: 'aspect-[3/4]',
       maxWidthClass: 'max-w-[1086px]',
@@ -432,7 +433,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     mobile: {
       id: 'mobile',
-      src: '/images/P03movil.png',
+      src: publicAssetPath('/images/P03movil.png'),
       aspectRatio: '9/16',
       aspectRatioClass: 'aspect-[9/16]',
       maxWidthClass: 'max-w-[941px]',
@@ -484,7 +485,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     total: 15,
     desktop: {
       id: 'desktop',
-      src: '/images/P04.png',
+      src: publicAssetPath('/images/P04.png'),
       aspectRatio: '16/9',
       aspectRatioClass: 'aspect-[16/9]',
       maxWidthClass: 'max-w-[1920px]',
@@ -531,7 +532,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     tablet: {
       id: 'tablet',
-      src: '/images/p04tablet.png',
+      src: publicAssetPath('/images/p04tablet.png'),
       aspectRatio: '3/4',
       aspectRatioClass: 'aspect-[3/4]',
       maxWidthClass: 'max-w-[1086px]',
@@ -578,7 +579,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     mobile: {
       id: 'mobile',
-      src: '/images/p04movil.png',
+      src: publicAssetPath('/images/p04movil.png'),
       aspectRatio: '9/16',
       aspectRatioClass: 'aspect-[9/16]',
       maxWidthClass: 'max-w-[941px]',
@@ -630,7 +631,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     total: 15,
     desktop: {
       id: 'desktop',
-      src: '/images/P05.png',
+      src: publicAssetPath('/images/P05.png'),
       aspectRatio: '16/9',
       aspectRatioClass: 'aspect-[16/9]',
       maxWidthClass: 'max-w-[1920px]',
@@ -677,7 +678,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     tablet: {
       id: 'tablet',
-      src: '/images/p05tablet.png',
+      src: publicAssetPath('/images/p05tablet.png'),
       aspectRatio: '3/4',
       aspectRatioClass: 'aspect-[3/4]',
       maxWidthClass: 'max-w-[1086px]',
@@ -724,7 +725,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     mobile: {
       id: 'mobile',
-      src: '/images/p05movil.png',
+      src: publicAssetPath('/images/p05movil.png'),
       aspectRatio: '9/16',
       aspectRatioClass: 'aspect-[9/16]',
       maxWidthClass: 'max-w-[941px]',
@@ -776,7 +777,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     total: 15,
     desktop: {
       id: 'desktop',
-      src: '/images/P06.png',
+      src: publicAssetPath('/images/P06.png'),
       aspectRatio: '16/9',
       aspectRatioClass: 'aspect-[16/9]',
       maxWidthClass: 'max-w-[1920px]',
@@ -823,7 +824,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     tablet: {
       id: 'tablet',
-      src: '/images/p06tablet.png',
+      src: publicAssetPath('/images/p06tablet.png'),
       aspectRatio: '3/4',
       aspectRatioClass: 'aspect-[3/4]',
       maxWidthClass: 'max-w-[1086px]',
@@ -870,7 +871,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     mobile: {
       id: 'mobile',
-      src: '/images/p06movil.png',
+      src: publicAssetPath('/images/p06movil.png'),
       aspectRatio: '9/16',
       aspectRatioClass: 'aspect-[9/16]',
       maxWidthClass: 'max-w-[941px]',
@@ -922,7 +923,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     total: 15,
     desktop: {
       id: 'desktop',
-      src: '/images/P07.png',
+      src: publicAssetPath('/images/P07.png'),
       aspectRatio: '16/9',
       aspectRatioClass: 'aspect-[16/9]',
       maxWidthClass: 'max-w-[1920px]',
@@ -969,7 +970,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     tablet: {
       id: 'tablet',
-      src: '/images/p07tablet.png',
+      src: publicAssetPath('/images/p07tablet.png'),
       aspectRatio: '3/4',
       aspectRatioClass: 'aspect-[3/4]',
       maxWidthClass: 'max-w-[1086px]',
@@ -1016,7 +1017,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     mobile: {
       id: 'mobile',
-      src: '/images/p07movil.png',
+      src: publicAssetPath('/images/p07movil.png'),
       aspectRatio: '9/16',
       aspectRatioClass: 'aspect-[9/16]',
       maxWidthClass: 'max-w-[941px]',
@@ -1068,7 +1069,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     total: 15,
     desktop: {
       id: 'desktop',
-      src: '/images/P08.png',
+      src: publicAssetPath('/images/P08.png'),
       aspectRatio: '16/9',
       aspectRatioClass: 'aspect-[16/9]',
       maxWidthClass: 'max-w-[1920px]',
@@ -1115,7 +1116,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     tablet: {
       id: 'tablet',
-      src: '/images/p08tablet.png',
+      src: publicAssetPath('/images/p08tablet.png'),
       aspectRatio: '3/4',
       aspectRatioClass: 'aspect-[3/4]',
       maxWidthClass: 'max-w-[1086px]',
@@ -1162,7 +1163,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     mobile: {
       id: 'mobile',
-      src: '/images/p08movil.png',
+      src: publicAssetPath('/images/p08movil.png'),
       aspectRatio: '9/16',
       aspectRatioClass: 'aspect-[9/16]',
       maxWidthClass: 'max-w-[941px]',
@@ -1214,7 +1215,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     total: 15,
     desktop: {
       id: 'desktop',
-      src: '/images/P09.png',
+      src: publicAssetPath('/images/P09.png'),
       aspectRatio: '16/9',
       aspectRatioClass: 'aspect-[16/9]',
       maxWidthClass: 'max-w-[1920px]',
@@ -1261,7 +1262,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     tablet: {
       id: 'tablet',
-      src: '/images/p09tablet.png',
+      src: publicAssetPath('/images/p09tablet.png'),
       aspectRatio: '3/4',
       aspectRatioClass: 'aspect-[3/4]',
       maxWidthClass: 'max-w-[1086px]',
@@ -1308,7 +1309,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     mobile: {
       id: 'mobile',
-      src: '/images/p09movil.png',
+      src: publicAssetPath('/images/p09movil.png'),
       aspectRatio: '9/16',
       aspectRatioClass: 'aspect-[9/16]',
       maxWidthClass: 'max-w-[941px]',
@@ -1360,7 +1361,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     total: 15,
     desktop: {
       id: 'desktop',
-      src: '/images/P10.png',
+      src: publicAssetPath('/images/P10.png'),
       aspectRatio: '16/9',
       aspectRatioClass: 'aspect-[16/9]',
       maxWidthClass: 'max-w-[1920px]',
@@ -1407,7 +1408,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     tablet: {
       id: 'tablet',
-      src: '/images/p10tablet.png',
+      src: publicAssetPath('/images/p10tablet.png'),
       aspectRatio: '3/4',
       aspectRatioClass: 'aspect-[3/4]',
       maxWidthClass: 'max-w-[1086px]',
@@ -1454,7 +1455,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     mobile: {
       id: 'mobile',
-      src: '/images/p10movil.png',
+      src: publicAssetPath('/images/p10movil.png'),
       aspectRatio: '9/16',
       aspectRatioClass: 'aspect-[9/16]',
       maxWidthClass: 'max-w-[941px]',
@@ -1506,7 +1507,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     total: 15,
     desktop: {
       id: 'desktop',
-      src: '/images/P11.png',
+      src: publicAssetPath('/images/P11.png'),
       aspectRatio: '16/9',
       aspectRatioClass: 'aspect-[16/9]',
       maxWidthClass: 'max-w-[1920px]',
@@ -1553,7 +1554,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     tablet: {
       id: 'tablet',
-      src: '/images/p11tablet.png',
+      src: publicAssetPath('/images/p11tablet.png'),
       aspectRatio: '3/4',
       aspectRatioClass: 'aspect-[3/4]',
       maxWidthClass: 'max-w-[1086px]',
@@ -1600,7 +1601,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     mobile: {
       id: 'mobile',
-      src: '/images/p11movil.png',
+      src: publicAssetPath('/images/p11movil.png'),
       aspectRatio: '9/16',
       aspectRatioClass: 'aspect-[9/16]',
       maxWidthClass: 'max-w-[941px]',
@@ -1652,7 +1653,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     total: 15,
     desktop: {
       id: 'desktop',
-      src: '/images/P12.png',
+      src: publicAssetPath('/images/P12.png'),
       aspectRatio: '16/9',
       aspectRatioClass: 'aspect-[16/9]',
       maxWidthClass: 'max-w-[1920px]',
@@ -1699,7 +1700,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     tablet: {
       id: 'tablet',
-      src: '/images/p12tablet.png',
+      src: publicAssetPath('/images/p12tablet.png'),
       aspectRatio: '3/4',
       aspectRatioClass: 'aspect-[3/4]',
       maxWidthClass: 'max-w-[1086px]',
@@ -1746,7 +1747,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     mobile: {
       id: 'mobile',
-      src: '/images/p12movil.png',
+      src: publicAssetPath('/images/p12movil.png'),
       aspectRatio: '9/16',
       aspectRatioClass: 'aspect-[9/16]',
       maxWidthClass: 'max-w-[941px]',
@@ -1798,7 +1799,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     total: 15,
     desktop: {
       id: 'desktop',
-      src: '/images/P13.png',
+      src: publicAssetPath('/images/P13.png'),
       aspectRatio: '16/9',
       aspectRatioClass: 'aspect-[16/9]',
       maxWidthClass: 'max-w-[1920px]',
@@ -1845,7 +1846,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     tablet: {
       id: 'tablet',
-      src: '/images/p13tablet.png',
+      src: publicAssetPath('/images/p13tablet.png'),
       aspectRatio: '3/4',
       aspectRatioClass: 'aspect-[3/4]',
       maxWidthClass: 'max-w-[1086px]',
@@ -1892,7 +1893,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     mobile: {
       id: 'mobile',
-      src: '/images/p13movil.png',
+      src: publicAssetPath('/images/p13movil.png'),
       aspectRatio: '9/16',
       aspectRatioClass: 'aspect-[9/16]',
       maxWidthClass: 'max-w-[941px]',
@@ -1944,7 +1945,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     total: 15,
     desktop: {
       id: 'desktop',
-      src: '/images/P14.png',
+      src: publicAssetPath('/images/P14.png'),
       aspectRatio: '16/9',
       aspectRatioClass: 'aspect-[16/9]',
       maxWidthClass: 'max-w-[1920px]',
@@ -1991,7 +1992,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     tablet: {
       id: 'tablet',
-      src: '/images/p14tablet.png',
+      src: publicAssetPath('/images/p14tablet.png'),
       aspectRatio: '3/4',
       aspectRatioClass: 'aspect-[3/4]',
       maxWidthClass: 'max-w-[1086px]',
@@ -2038,7 +2039,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     mobile: {
       id: 'mobile',
-      src: '/images/p14movil.png',
+      src: publicAssetPath('/images/p14movil.png'),
       aspectRatio: '9/16',
       aspectRatioClass: 'aspect-[9/16]',
       maxWidthClass: 'max-w-[941px]',
@@ -2090,7 +2091,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     total: 15,
     desktop: {
       id: 'desktop',
-      src: '/images/P15.png',
+      src: publicAssetPath('/images/P15.png'),
       aspectRatio: '16/9',
       aspectRatioClass: 'aspect-[16/9]',
       maxWidthClass: 'max-w-[1920px]',
@@ -2137,7 +2138,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     tablet: {
       id: 'tablet',
-      src: '/images/p15tablet.png',
+      src: publicAssetPath('/images/p15tablet.png'),
       aspectRatio: '3/4',
       aspectRatioClass: 'aspect-[3/4]',
       maxWidthClass: 'max-w-[1086px]',
@@ -2184,7 +2185,7 @@ export const QUESTIONS_CONFIG: Record<string, QuestionData> = {
     },
     mobile: {
       id: 'mobile',
-      src: '/images/p15movil.png',
+      src: publicAssetPath('/images/p15movil.png'),
       aspectRatio: '9/16',
       aspectRatioClass: 'aspect-[9/16]',
       maxWidthClass: 'max-w-[941px]',
