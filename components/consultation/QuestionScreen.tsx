@@ -34,7 +34,6 @@ export function QuestionScreen({
   onAnswerSelected,
   hideDefaultNav = false,
 }: QuestionScreenProps) {
-  const [selectedKey, setSelectedKey] = useState<OptionKey | null>(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [autoDetected, setAutoDetected] = useState<DeviceType>('desktop');
   const [questionImageLoaded, setQuestionImageLoaded] = useState(false);
@@ -44,7 +43,6 @@ export function QuestionScreen({
   if (prevQuestionId !== questionId) {
     setPrevQuestionId(questionId);
     setIsTransitioning(false);
-    setSelectedKey(null);
   }
 
   // Detección responsive en vivo para modo 'auto'
@@ -91,10 +89,9 @@ export function QuestionScreen({
       return;
     }
 
-    setSelectedKey(key);
     setIsTransitioning(true);
 
-    // Feedback visual sutil (200ms) → transición inmediata
+    // Transición automática inmediata, sin resaltado de la zona pulsada
     setTimeout(() => {
       onAnswerSelected({
         questionId,
@@ -179,7 +176,7 @@ export function QuestionScreen({
                     width: area.width,
                     height: area.height,
                   }}
-                  className={`absolute rounded-xl transition-colors duration-150 cursor-pointer border-0 outline-none focus:outline-none ${
+                  className="absolute rounded-xl cursor-pointer border-0 bg-transparent outline-none focus:outline-none hover:bg-transparent active:bg-transparent"
                     isSelected
                       ? 'bg-white/[0.08]'
                       : 'hover:bg-white/[0.025] active:bg-white/[0.05]'
