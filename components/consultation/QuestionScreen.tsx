@@ -183,7 +183,7 @@ export function QuestionScreen({
                 </button>
               );
             })}
-          </div>
+          </div>}
         </div>
       </div>
     </div>
