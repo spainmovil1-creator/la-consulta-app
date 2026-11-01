@@ -1,3 +1,4 @@
+import { publicAssetPath } from '@/lib/utils';
 'use client';
 /* eslint-disable @next/next/no-img-element */
 
@@ -26,8 +27,8 @@ export interface BookPresentationScreenProps {
   autoPlayAudio?: boolean;
 }
 
-export const BOOK_MOCKUP_PATH = '/images/mockupelpesoquenoseve.png';
-export const BOOK_AUDIO_PATH = '/audio/audioelpeso.mp3';
+export const BOOK_MOCKUP_PATH = publicAssetPath('/images/mockupelpesoquenoseve.png');
+export const BOOK_AUDIO_PATH = publicAssetPath('/audio/audioelpeso.mp3');
 
 /**
  * Plantilla oficial editorial y comercial para las seis obras de La Consulta.
