@@ -24,8 +24,6 @@ export function IntroExperience() {
   const [transitionPhase, setTransitionPhase] = useState<TransitionPhase>('playing');
   const [videoError, setVideoError] = useState<string | null>(null);
   const [isMuted, setIsMuted] = useState(false);
-  const [currentTime, setCurrentTime] = useState(0);
-  const [duration, setDuration] = useState(19.3);
 
   // Respuestas registradas en el motor
   const [p01Answer, setP01Answer] = useState<AnswerRegistration | null>(null);
@@ -65,7 +63,6 @@ export function IntroExperience() {
     transitionStartedRef.current = false;
     setTransitionPhase('playing');
     setStage('intro-screen');
-    setCurrentTime(0);
     setP01Answer(null);
     setP02Answer(null);
     setP03Answer(null);
@@ -136,8 +133,6 @@ export function IntroExperience() {
     if (videoRef.current) {
       const time = videoRef.current.currentTime;
       const total = videoRef.current.duration || 19.3;
-      setCurrentTime(time);
-      setDuration(total);
 
       if (time >= total - 1.8 && !transitionStartedRef.current && stage === 'video-playing') {
         triggerCrossfade();
@@ -161,16 +156,6 @@ export function IntroExperience() {
     }
   };
 
-  const jumpToVoice = () => {
-    if (videoRef.current) {
-      videoRef.current.currentTime = 7.8;
-      videoRef.current.muted = false;
-      videoRef.current.volume = 1.0;
-      setIsMuted(false);
-      videoRef.current.play().catch(() => {});
-    }
-  };
-
   const toggleMute = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (videoRef.current) {
@@ -180,7 +165,6 @@ export function IntroExperience() {
     }
   };
 
-  const isSpeakingZone = currentTime >= 7.8;
   const isCrossfading = transitionPhase === 'crossfading';
   return (
     <>
