@@ -1,5 +1,6 @@
-import { publicAssetPath } from '@/lib/utils';
 'use client';
+
+import { publicAssetPath } from '@/lib/utils';
 /* eslint-disable @next/next/no-img-element */
 
 import React, { useRef, useState, useEffect, useCallback } from 'react';
