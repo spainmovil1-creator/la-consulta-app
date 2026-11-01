@@ -289,14 +289,14 @@ export function BookPresentationScreen({
             
             {/* Columna Izquierda: Mockup volumétrico del libro */}
             <div className="md:col-span-6 flex justify-center md:justify-end">
-              <div className="relative w-full max-w-[350px] sm:max-w-[420px] md:max-w-[340px] lg:max-w-[380px] xl:max-w-[410px]">
+              <div className="relative w-full max-w-[560px] sm:max-w-[600px] md:max-w-[460px] lg:max-w-[520px] xl:max-w-[560px]">
                 <img
                   src={book.mockupPath}
                   alt={book.mockupAlt}
                   loading="eager"
                   fetchPriority="high"
                   decoding="async"
-                  className="w-full h-auto max-h-[400px] md:max-h-[210px] lg:max-h-[235px] object-contain rounded-xl shadow-[0_20px_45px_-12px_rgba(29,44,61,0.22),0_8px_18px_-4px_rgba(29,44,61,0.08)] select-none transition-transform duration-500 hover:scale-[1.01]"
+                  className="w-full h-auto max-h-[360px] md:max-h-[280px] lg:max-h-[320px] object-contain rounded-xl shadow-[0_20px_45px_-12px_rgba(29,44,61,0.22),0_8px_18px_-4px_rgba(29,44,61,0.08)] select-none transition-transform duration-500 hover:scale-[1.01]"
                   draggable={false}
                 />
               </div>
