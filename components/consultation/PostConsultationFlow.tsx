@@ -1,5 +1,6 @@
-import { publicAssetPath } from '@/lib/utils';
 'use client';
+
+import { publicAssetPath } from '@/lib/utils';
 
 import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
