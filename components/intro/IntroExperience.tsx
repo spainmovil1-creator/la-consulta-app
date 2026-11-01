@@ -1,3 +1,4 @@
+import { publicAssetPath } from '@/lib/utils';
 'use client';
 /* eslint-disable @next/next/no-img-element */
 
@@ -490,9 +491,9 @@ export function IntroExperience() {
                   onEnded={handleVideoEnded}
                   className="w-full h-full portrait:max-sm:object-cover portrait:max-sm:object-[53%_center] portrait:sm:object-cover portrait:sm:object-[53%_center] landscape:object-contain landscape:object-center"
                 >
-                  <source src="/assets/videos/PRESENTACIONWEB.mp4" type="video/mp4" />
-                  <source src="/PRESENTACIONWEB.mp4" type="video/mp4" />
-                  <source src="/assets/videos/PRESENTACIONWEB-1.mp4" type="video/mp4" />
+                  <source src={publicAssetPath("/assets/videos/PRESENTACIONWEB.mp4")} type="video/mp4" />
+                  <source src={publicAssetPath("/PRESENTACIONWEB.mp4")} type="video/mp4" />
+                  <source src={publicAssetPath("/assets/videos/PRESENTACIONWEB-1.mp4")} type="video/mp4" />
                 </video>
               </div>
             )}
