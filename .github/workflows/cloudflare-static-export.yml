@@ -25,12 +25,14 @@ jobs:
         run: npm run build && node scripts/prepare-cloudflare-pages.mjs
         env:
           NEXT_PUBLIC_BASE_PATH: /consulta
+      - name: Verify Pages path layout
+        run: test -f out/consulta/index.html && test -d out/consulta/_next
       - name: Run engine verification tests
         run: npm test
       - name: Upload static export
         uses: actions/upload-artifact@v4
         with:
           name: la-consulta-static-export
-          path: out/
+          path: out/consulta/
           if-no-files-found: error
           retention-days: 7
